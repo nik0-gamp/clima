@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+
+        <h1>Clima JN-GP</h1>
+        <p class="subtitulo">Consulta el clima de cualquier ciudad</p>
+
+        <div class="busqueda">
+            <input type="text" id="ciudad" placeholder="Escribe una ciudad...">
+            <button id="buscar">Buscar</button>
+        </div>
+
+        <p id="mensaje"></p>
+
+        <div class="clima" id="clima">
+
+            <div class="principal">
+                <h2 id="nombreCiudad">Ciudad</h2>
+                <p id="condicion">Condición del clima</p>
+                <h1 id="temperatura">--°C</h1>
+            </div>
+
+            <div class="datos">
+
+                <div class="tarjeta">
+                    <h3>Viento</h3>
+                    <p id="viento">-- km/h</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Probabilidad de lluvia</h3>
+                    <p id="lluvia">-- %</p>
+                </div>
+
+            </div>
+
+            <button id="actualizar">Actualizar pronóstico</button>
+
+            <h2 class="tituloHoras">Pronóstico de las últimas y próximas 24 horas</h2>
+
+            <div id="horas" class="horas"></div>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
